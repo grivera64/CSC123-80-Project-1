@@ -1,4 +1,4 @@
-package project1;
+//package project1;
 
 /*
  * grivera64
@@ -12,10 +12,10 @@ package project1;
  * In the following problem use these two files which have been placed in 
  * Project Solutions/Project 1 tab.
  * 
- * - GirlNames.txt – This file contains a list of the 200 most popular names given 
+ * - GirlNames.txt â€“ This file contains a list of the 200 most popular names given 
  * to girls born in the United States for the years 2000 through 2009.
  * 
- * - BoyNames.txt – This file contains a list of the 200 most popular names given 
+ * - BoyNames.txt â€“ This file contains a list of the 200 most popular names given 
  * to boys born in the United States for the years 2000 through 2009.
  * 
  * In main: (20)
@@ -23,7 +23,7 @@ package project1;
  * Call getArray with the name of the file (a String). 
  * 		Return a String array with the names in the file.
  * Ask the user if they wish to continue querying against the list.
- * 		The user should be able to enter a boy’s name, a girl’s name, or both, and 
+ * 		The user should be able to enter a boyâ€™s name, a girlâ€™s name, or both, and 
  * 		the application will display messages indicating whether the names were 
  * 		among the most popular. 
  * To determine if the name is on the list call isFound with
