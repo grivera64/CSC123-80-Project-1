@@ -13,11 +13,16 @@ This project is composed of 9 Programs:
 8.	CaeasarCipherFromFile (30)
 9.	NameSearch (50)
 
+
+## Running the program
 If you would like to test and improve the programs, pull/download the repo and use the command line to run the program:
 
-> Example:
->> cd desktop
->> javac CalculatePi.java
->> java CalculatePi
+Ex:
+
+  > cd desktop             //locate directory
+  
+  > javac CalculatePi.java //compile
+  
+  > java CalculatePi       //run
 
 Afterwards, you are set to go!
