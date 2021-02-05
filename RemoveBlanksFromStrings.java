@@ -1,4 +1,4 @@
-package project1;
+//package project1;
 
 /*
  * grivera64
@@ -35,7 +35,7 @@ package project1;
  * 
  * createFileScanner: (10)
  * a.	Accepts as a String the name of the physical file.
- * b.	Creates a Scanner throwing an exception if the physical file doesn’t exist.
+ * b.	Creates a Scanner throwing an exception if the physical file doesnâ€™t exist.
  * c.	Returns a reference to the Scanner.
  * 
  * createPrintWriter: (10)
