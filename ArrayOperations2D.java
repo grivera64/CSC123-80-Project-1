@@ -1,4 +1,4 @@
-//package project1;
+package project1;
 
 /*
  * grivera64
@@ -87,6 +87,10 @@ public class ArrayOperations2D
 				rows = -1;
 				System.out.printf("Invalid input! Please try again...\n\n");
 			}
+			finally
+			{
+				keyboard.nextLine();
+			}
 			
 		} while (rows <= 0);
 		
@@ -104,6 +108,10 @@ public class ArrayOperations2D
 			{
 				columns = -1;
 				System.out.printf("Invalid input! Please try again...\n\n");
+			}
+			finally
+			{
+				keyboard.nextLine();
 			}
 			
 		} while (columns <= 0);
