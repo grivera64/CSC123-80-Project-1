@@ -1,10 +1,10 @@
-//package project1;
+package project1;
 
 /*
  * grivera64
  * Project 1
- * Program: CaeasarCipherFromFile.java
- * 4 February 2021
+ * Program: CaesarCipherFromFile.java
+ * 20 February 2021
  * 
  * Purpose: Encrypts/Decrypts the input file using the Caeasar Cipher algorithm
  * ------------------------------------------------------------------------
@@ -23,7 +23,7 @@ import java.io.File;
 import java.io.PrintWriter;
 import java.io.IOException;
 
-public class CaeasarCipherFromFile
+public class CaesarCipherFromFile
 {
 	
 	public static void main(String[] args) throws IOException
@@ -46,7 +46,7 @@ public class CaeasarCipherFromFile
 			{
 				System.out.printf("File does not exist!\nTry again...\n\n");
 			}
-			System.out.printf("Please enter a file to Caeasar Cipher:\n>> ");
+			System.out.printf("Please enter a file to Caesar Cipher:\n>> ");
 			input = keyboard.nextLine();
 			in = new File(input);
 			if (in.exists())
@@ -58,7 +58,7 @@ public class CaeasarCipherFromFile
 				inFile = null;
 			}
 			
-		} while (!inFile.hasNext());
+		} while (inFile == null);
 		
 		
 		//request for an output file to write
@@ -118,6 +118,7 @@ public class CaeasarCipherFromFile
 			lines.add(inFile.nextLine().toCharArray());
 		}
 		
+		
 		//change letter data only
 		for (int index = 0; index < lines.size(); index++)
 		{
@@ -130,6 +131,7 @@ public class CaeasarCipherFromFile
 				if (!Character.isLetter(lines.get(index)[character]))
 				{
 					//System.out.println("DEBUG: Skipped");
+					lines.get(index)[character] = (char) 0;
 					continue;
 				}
 				else if (Character.isLetter(lines.get(index)[character]) 
@@ -177,7 +179,10 @@ public class CaeasarCipherFromFile
 		{
 			for (int index2 = 0; index2 < lines.get(index).length; index2++)
 			{
-				outFile.printf("%c", lines.get(index)[index2]);
+				if (lines.get(index)[index2] != 0)
+				{
+					outFile.printf("%c", lines.get(index)[index2]);
+				}
 			}
 			if (index < lines.size() - 1)
 			{
