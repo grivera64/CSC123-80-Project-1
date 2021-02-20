@@ -10,8 +10,8 @@ This project is composed of 9 Programs:
 5.	SlotMachine (25)
 6.	String Rotation  (20)
 7.	RemoveBlanksFromStrings (50)
-8.	CaeasarCipherFromFile (30)
-9.	NameSearch (50)
+8.	CaeasarCipherFromFile (30) (You need to have an input and output text file already made to use this program)
+9.	NameSearch (50) (You MUST download the BoyNames.txt and GirlNames.txt in order to use this program)
 
 
 ## Running the program
